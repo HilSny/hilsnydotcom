@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {Column, Row} from 'react-foundation'
-import PDF from 'react-pdf'
+import {Column, Row, Progress} from 'react-foundation'
+import FontAwesome from 'react-fontawesome'
 
 const styles={
   about: {
@@ -10,16 +10,22 @@ const styles={
     maxWidth: 700,
     paddingBottom: 40,
   },
+
   aboutme: {
     backgroundColor: '#252F3B',
     color: 'white',
     fontFamily: 'Helvetica',
-    height: 400,
+    padding: 20,
+  },
 
+  icons: {
+    margin: 'auto',
+    maxWidth: 800,
+    textAlign: 'center',
   },
 
   title: {
-    fontSize: 40,
+    fontSize: 60,
     paddingTop: 100,
     textAlign: 'center',
     marginTop: 0,
@@ -30,14 +36,28 @@ const AboutMe = () => (
   <div style={styles.aboutme}>
     <Row>
       <Column small={12} centerOnSmall>
-        <h1 style={styles.title} >About Me</h1>
+        <h1 style={styles.title}>Hillary Snyder</h1>
       </Column>
     </Row>
     <Row>
       <Column small={12}>
-        <p style={styles.about} className="text-center">My name is Hillary Snyder. I am a developer in the Chicago area who is interested in ReactJS, Women in Tech, Coffee, Running and Beer.</p>
+        <p style={styles.about}>My name is Hillary Snyder. I am a developer in the Chicago area who is interested in reactJS, women in tech, coffee, and running.</p>
       </Column>
     </Row>
+
+    <div style={styles.icons}>
+      <Row>
+        <Column small={4}>
+          <FontAwesome name="github" size="3x" />
+        </Column>
+        <Column small={4}>
+          <FontAwesome name="twitter" size="3x"/>
+        </Column>
+        <Column small={4}>
+          <FontAwesome name="linkedin" size="3x"/>
+        </Column>
+      </Row>
+    </div>
   </div>
 )
 

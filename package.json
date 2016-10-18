@@ -6,9 +6,11 @@
     "react-scripts": "0.4.3"
   },
   "dependencies": {
+    "foundation-sites": "^6.2.4-rc2",
     "radium": "^0.18.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-fontawesome": "^1.2.0",
     "react-foundation": "^0.7.0"
   },
   "scripts": {

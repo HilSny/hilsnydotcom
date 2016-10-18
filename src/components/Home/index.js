@@ -4,24 +4,27 @@ import {Column, Row} from 'react-foundation'
 
 import AboutMe from './components/AboutMe'
 
+import './styles/font-awesome/css/font-awesome.min.css'
+import 'foundation-sites/dist/foundation.min.css'
+
+
 const styles={
   about: {
     margin: 'auto',
   }
+
 }
 
 const Home = () => (
-  <section>
-
-    <Row>
-      <Column small={12} centeronSmall>
+  <div>
+    <Row isExpanded>
+      <Column small={12} >
         <div style={styles.about}>
           <AboutMe />
         </div>
-
       </Column>
     </Row>
-  </section>
+  </div>
 )
 
 export default Home
