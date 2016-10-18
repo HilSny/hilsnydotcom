@@ -16,6 +16,7 @@ const styles={
     color: 'white',
     fontFamily: 'Helvetica',
     padding: 20,
+        textAlign: 'center',
   },
 
   icons: {
@@ -41,7 +42,7 @@ const AboutMe = () => (
     </Row>
     <Row>
       <Column small={12}>
-        <p style={styles.about}>My name is Hillary Snyder. I am a developer in the Chicago area who is interested in reactJS, women in tech, coffee, and running.</p>
+        <p style={styles.about}> A developer in the Chicago area who is interested in reactJS, women in tech, coffee, and running.</p>
       </Column>
     </Row>
 
